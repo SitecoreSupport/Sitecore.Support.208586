@@ -57,15 +57,19 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneratePreviewLink.cs" />
+    <Compile Include="ExpandDynamicLink.cs" />
+    <Compile Include="HandleInternalLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.208586.config" />
+    <Content Include="App_Config\Include\zzz\Sitecore.Support.208586.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\sc82rev170407.pubxml" />
     <None Include="web.config" />
   </ItemGroup>
   <PropertyGroup>
